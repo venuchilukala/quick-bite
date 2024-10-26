@@ -38,7 +38,7 @@ const SpecialDishes = () => {
 
   useEffect(() => {
     (async () => {
-      const response = await fetch("http://localhost:6001/menu");
+      const response = await fetch("https://quick-bite-server-1.onrender.com/menu");
       const data = await response.json();
       const specials = data.filter((item) => item.category === "main course");
       setRecipes(specials);

@@ -27,7 +27,7 @@ const Cards = (props) => {
         price,
         email: user.email,
       };
-      fetch("http://localhost:6001/carts", {
+      fetch("https://quick-bite-server-1.onrender.com/carts", {
         method: "POST",
         headers: {
           "content-type": "application/json",
