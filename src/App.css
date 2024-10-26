@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+body{
+    font-family: "Inter", sans-serif;
+}
+
+header{
+    z-index: 10001 !important;
+}
+
+.section-container{
+    @apply max-w-screen-2xl container mx-auto lg:px-24 px-4 pt-24 md:pt-0;
+}
+
+.subtitle{
+    @apply text-red text-lg tracking-wide font-medium uppercase
+}
+
+.title{
+    @apply text-4xl md:text-5xl my-2 font-bold md:leading-snug leading-snug
+}
+
+.heartStar{
+    border-radius: 0 20px 0 20px;
+}
+
+.active{
+    text-decoration: underline;
+    color: rgb(164, 199, 102);
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
