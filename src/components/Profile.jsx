@@ -52,7 +52,7 @@ const Profile = (props) => {
           <ul className="menu bg-base-200 text-base-content min-h-full w-80 p-4">
             {/* Sidebar content here */}
             <li>
-              <a href="/update-profile">Profile</a>
+              <Link to="/update-profile">Profile</Link>
             </li>
             <li>
               <Link to="/orders">Orders</Link>

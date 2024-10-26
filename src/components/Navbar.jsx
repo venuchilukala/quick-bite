@@ -32,20 +32,20 @@ const Navbar = () => {
   const navItems = (
     <>
       <li>
-        <a href="/">Home</a>
+        <Link to="/">Home</Link>
       </li>
       <li tabIndex={0}>
         <details>
           <summary>Menu</summary>
           <ul className="p-2">
             <li>
-              <a href="/menu">All</a>
+              <Link to="/menu">All</Link>
             </li>
             <li>
-              <a href="/menu">Biryani</a>
+              <Link to="/menu">Biryani</Link>
             </li>
             <li>
-              <a href="/menu">Pizzas</a>
+              <Link to="/menu">Pizzas</Link>
             </li>
           </ul>
         </details>
@@ -70,7 +70,7 @@ const Navbar = () => {
         <a>Offers</a>
       </li>
       <li>
-        <a href="/contact">Contact</a>
+        <Link to="/contact">Contact</Link>
       </li>
     </>
   );
@@ -109,9 +109,9 @@ const Navbar = () => {
               {navItems}
             </ul>
           </div>
-          <a href="/">
+          <Link href="/">
             <img src={logo} alt="logo" />
-          </a>
+          </Link>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">{navItems}</ul>
