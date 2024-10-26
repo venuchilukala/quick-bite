@@ -44,7 +44,7 @@ const Modal = () => {
           name: result?.user?.displayName,
           email: result?.user?.email,
         };
-        axios.post("https://quick-bite-server-1.onrender.com/users", userInfo).then((response) => {
+        axios.post("https://quick-bite-server-38rl.onrender.com/users", userInfo).then((response) => {
           alert("Login successful!");
           document.getElementById("my_modal_5").close();
           navigate("/");

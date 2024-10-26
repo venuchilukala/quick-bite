@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import useAuth from "./useAuth";
 
 const axiosSecure = axios.create({
-  baseURL: "https://quick-bite-server-1.onrender.com",
+  baseURL: "https://quick-bite-server-38rl.onrender.com",
 });
 
 const useAxiosSecure = () => {

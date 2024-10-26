@@ -17,7 +17,7 @@ const CartPage = () => {
 
   //Handle Increase button
   const handleIncrease = (item) => {
-    fetch(`https://quick-bite-server-1.onrender.com/carts/${item._id}`, {
+    fetch(`https://quick-bite-server-38rl.onrender.com/carts/${item._id}`, {
       method: "PUT",
       headers: {
         "Content-Type": "application/json; charset=UTF-8",
@@ -48,7 +48,7 @@ const CartPage = () => {
   //Handle decrease button
   const handleDecrease = (item) => {
     if (item.quantity > 1) {
-      fetch(`https://quick-bite-server-1.onrender.com/carts/${item._id}`, {
+      fetch(`https://quick-bite-server-38rl.onrender.com/carts/${item._id}`, {
         method: "PUT",
         headers: {
           "Content-Type": "application/json; charset=UTF-8",
@@ -91,7 +91,7 @@ const CartPage = () => {
       confirmButtonText: "Yes, delete it!",
     }).then((result) => {
       if (result.isConfirmed) {
-        fetch(`https://quick-bite-server-1.onrender.com/carts/${item._id}`, { method: "DELETE" })
+        fetch(`https://quick-bite-server-38rl.onrender.com/carts/${item._id}`, { method: "DELETE" })
           .then((res) => res.json())
           .then((data) => {
             if (data.deletedCount > 0) {

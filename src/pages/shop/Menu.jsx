@@ -17,7 +17,7 @@ const Menu = () => {
     //Fetchind data from backend
     const fetchedData = async () => {
       try {
-        const response = await fetch("https://quick-bite-server-1.onrender.com/menu");
+        const response = await fetch("https://quick-bite-server-38rl.onrender.com/menu");
         const data = await response.json();
         setMenu(data);
         setFilteredItems(data);

@@ -56,7 +56,7 @@ const AuthProvider = ({ children }) => {
       if (currentuser) {
         const userInfo = { email: currentuser.email };
         axios
-          .post("https://quick-bite-server-1.onrender.com/jwt", userInfo)
+          .post("https://quick-bite-server-38rl.onrender.com/jwt", userInfo)
           .then((response) => {
             if(response.data.token){
               localStorage.setItem("access-token", response.data.token)

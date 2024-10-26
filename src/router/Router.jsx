@@ -104,7 +104,7 @@ const router = createBrowserRouter([
         path: "update-menu/:id",
         element: <UpdateMenu />,
         loader: ({ params }) =>
-          fetch(`https://quick-bite-server-1.onrender.com/menu/${params.id}`),
+          fetch(`https://quick-bite-server-38rl.onrender.com/menu/${params.id}`),
       },
       {
         path: "all-tickets",

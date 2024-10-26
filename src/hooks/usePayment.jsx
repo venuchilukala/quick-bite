@@ -9,7 +9,7 @@ const usePayment = () => {
     queryKey: ["orders", user?.email],
     queryFn: async () => {
       const res = await fetch(
-        `https://quick-bite-server-1.onrender.com/payments?email=${user?.email}`,
+        `https://quick-bite-server-38rl.onrender.com/payments?email=${user?.email}`,
         {
           headers: {
             authorization: `Bearer ${token}`,
